@@ -1,0 +1,5 @@
+CENTRAL DOS ACHADOS
+Site estático pronto para GitHub Pages. Envie todos os arquivos desta pasta para a raiz do repositório.
+Pixel Meta: 1026653090450210.
+O evento PageView dispara na abertura; CliqueGrupoWhatsApp dispara no clique (não confirma entrada no grupo).
+Logo e favicon PNG transparentes derivados da imagem fornecida.
