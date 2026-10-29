@@ -113,3 +113,28 @@ h1 em,h2 em{color:#f77716!important}
 footer{color:#855335!important}
 .ambient-one,.ambient-two{opacity:.22!important}
 @media(max-width:600px){.logo{max-width:min(270px,76vw)!important}.hero{padding-top:22px!important}}
+
+/* Landing curta, sem seções vazias e com CTA único */
+html,body{min-height:0!important;height:auto!important}
+body{display:flex;flex-direction:column;overflow-x:hidden}
+main{flex:none;width:100%;padding:0 14px}
+.hero{width:min(100%,620px);margin:26px auto 16px;padding:26px clamp(20px,4vw,38px) 30px}
+.hero h1{margin:12px auto 14px;line-height:1.12}
+.hero-description{color:#815037;font-size:clamp(14px,2.4vw,17px);line-height:1.5;margin:0 auto 22px;max-width:450px}
+.single-cta{width:100%;max-width:460px;margin:0 auto;min-height:60px}
+footer{flex:none;margin:0 auto;padding:8px 16px 22px!important}
+footer p{margin:5px auto}footer .footer-links{margin:8px auto}footer small{font-size:10px}
+.ambient{display:none}
+@media(max-width:600px){.hero{margin:14px auto 12px;padding:19px 18px 24px}.hero h1{font-size:clamp(28px,8vw,38px)}.hero-description{margin-bottom:18px}.single-cta{min-height:56px;padding:16px 12px}footer{padding-bottom:15px!important}}
+
+/* Compact mobile landing page: remove inherited oversized layout and force natural content height */
+html,body{height:auto!important;min-height:0!important;overflow-x:clip!important}
+body{display:block!important;position:relative!important;margin:0!important;padding:0!important}
+main{display:block!important;min-height:0!important;height:auto!important;padding:0 12px!important}
+.hero{margin:18px auto 8px!important}
+footer{position:relative!important;min-height:0!important;height:auto!important;margin:0 auto!important;padding:0 14px 18px!important}
+.ambient{display:none!important}
+.single-cta{animation:centralPulse 1.8s ease-in-out infinite!important;transform-origin:center;will-change:transform}
+@keyframes centralPulse{0%,100%{transform:scale(1);box-shadow:0 8px 22px rgba(245,105,0,.27)}50%{transform:scale(1.035);box-shadow:0 12px 30px rgba(245,105,0,.5),0 0 0 7px rgba(255,139,18,.09)}}
+@media(max-width:600px){.hero{margin:12px auto 6px!important;padding:18px 18px 21px!important}.logo-wrap{margin-bottom:11px!important}.hero h1{margin:12px auto 10px!important}.hero-description{margin-bottom:16px!important}footer{padding:0 14px 12px!important}.footer-logo{width:34px!important;height:34px!important}footer p{margin:2px auto!important}.footer-links{margin:6px auto!important}footer small{line-height:1.4!important}}
+@media(prefers-reduced-motion:reduce){.single-cta{animation:none!important}}
